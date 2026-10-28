@@ -1,0 +1,8 @@
+/* macOS permission prompts */
+"NSAppleEventsUsageDescription" = "PureMac używa Apple Events do komunikacji z Finderem podczas pokazywania plików.";
+"NSDesktopFolderUsageDescription" = "PureMac potrzebuje dostępu do Biurka, aby znaleźć zbędne i osierocone pliki.";
+"NSDocumentsFolderUsageDescription" = "PureMac potrzebuje dostępu do Dokumentów, aby znaleźć zbędne i osierocone pliki.";
+"NSDownloadsFolderUsageDescription" = "PureMac potrzebuje dostępu do Pobranych, aby znaleźć zbędne i osierocone pliki.";
+"NSRemovableVolumesUsageDescription" = "PureMac potrzebuje dostępu do woluminów wymiennych, aby wyszukać zbędne pliki.";
+"NSSystemAdministrationUsageDescription" = "PureMac potrzebuje uprawnień administratora, aby wyczyścić pamięć podręczną i całkowicie odinstalować aplikacje.";
+"NSHumanReadableCopyright" = "Copyright 2026. Licencja MIT.";

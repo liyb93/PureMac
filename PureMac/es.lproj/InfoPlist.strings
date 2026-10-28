@@ -1,0 +1,8 @@
+/* macOS permission prompts */
+"NSAppleEventsUsageDescription" = "PureMac usa Apple Events para interactuar con Finder al mostrar archivos.";
+"NSDesktopFolderUsageDescription" = "PureMac necesita acceder al Escritorio para encontrar archivos basura y huérfanos.";
+"NSDocumentsFolderUsageDescription" = "PureMac necesita acceder a Documentos para encontrar archivos basura y huérfanos.";
+"NSDownloadsFolderUsageDescription" = "PureMac necesita acceder a Descargas para encontrar archivos basura y huérfanos.";
+"NSRemovableVolumesUsageDescription" = "PureMac necesita acceder a volúmenes extraíbles para buscar archivos basura.";
+"NSSystemAdministrationUsageDescription" = "PureMac necesita acceso de administración del sistema para limpiar cachés y desinstalar aplicaciones por completo.";
+"NSHumanReadableCopyright" = "Copyright 2026. Licencia MIT.";

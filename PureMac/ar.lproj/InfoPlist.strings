@@ -1,0 +1,8 @@
+/* macOS permission prompts */
+"NSAppleEventsUsageDescription" = "يستخدم PureMac أحداث Apple للتفاعل مع Finder عند إظهار الملفات.";
+"NSDesktopFolderUsageDescription" = "يحتاج PureMac إلى الوصول إلى سطح المكتب للعثور على الملفات غير المرغوبة والمتروكة.";
+"NSDocumentsFolderUsageDescription" = "يحتاج PureMac إلى الوصول إلى المستندات للعثور على الملفات غير المرغوبة والمتروكة.";
+"NSDownloadsFolderUsageDescription" = "يحتاج PureMac إلى الوصول إلى التنزيلات للعثور على الملفات غير المرغوبة والمتروكة.";
+"NSRemovableVolumesUsageDescription" = "يحتاج PureMac إلى الوصول إلى وحدات التخزين القابلة للإزالة للبحث عن الملفات غير المرغوبة.";
+"NSSystemAdministrationUsageDescription" = "يحتاج PureMac إلى صلاحية إدارة النظام لتنظيف ذاكرة التخزين المؤقت وإزالة التطبيقات بالكامل.";
+"NSHumanReadableCopyright" = "حقوق النشر 2026. ترخيص MIT.";

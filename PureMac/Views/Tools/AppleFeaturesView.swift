@@ -36,7 +36,10 @@ struct AppleFeaturesView: View {
 
     private var features: [AppleFeature] {
         AppleFeatureCatalog.features(for: version).filter {
-            search.isEmpty || "\($0.title) \($0.summary) \($0.steps)".localizedCaseInsensitiveContains(search)
+            search.isEmpty || [$0.title, $0.summary, $0.steps]
+                .map { NSLocalizedString($0, comment: "") }
+                .joined(separator: " ")
+                .localizedCaseInsensitiveContains(search)
         }
     }
 
@@ -237,7 +240,7 @@ struct AppleFeaturesView: View {
             if backupsRunning || removalRunning {
                 HStack(spacing: 10) {
                     ProgressView().controlSize(.small)
-                    Text(removalRunning ? "Checking and moving selected backups to the Trash…" : "Checking local backups…")
+                    Text(LocalizedStringKey(removalRunning ? "Checking and moving selected backups to the Trash…" : "Checking local backups…"))
                         .font(.system(size: 12))
                     Spacer()
                     if backupsRunning {
@@ -270,7 +273,7 @@ struct AppleFeaturesView: View {
                 .font(.system(size: 12))
             }
             if backupsScanned && backups.isEmpty && !backupsRunning {
-                Text(backupIssues.isEmpty ? "No complete local device backups were found." : "No backups are available to select. Review the scan issues above.")
+                Text(LocalizedStringKey(backupIssues.isEmpty ? "No complete local device backups were found." : "No backups are available to select. Review the scan issues above."))
                     .font(.system(size: 12))
                     .foregroundStyle(.secondary)
             }
@@ -465,14 +468,16 @@ private struct AppleFeatureRow: View {
     var body: some View {
         DisclosureGroup(isExpanded: $expanded) {
             VStack(alignment: .leading, spacing: 12) {
-                Text(feature.steps)
+                Text(LocalizedStringKey(feature.steps))
                     .font(.system(size: 12))
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
                     .textSelection(.enabled)
                 HStack(spacing: 16) {
-                    Button(feature.destination.hasPrefix("application:") ? "Open Mail" : "Open Settings") {
+                    Button {
                         openDestination(feature.destination)
+                    } label: {
+                        Text(LocalizedStringKey(feature.destination.hasPrefix("application:") ? "Open Mail" : "Open Settings"))
                     }
                     .buttonStyle(.bordered)
                     .disabled(!available)
@@ -486,7 +491,7 @@ private struct AppleFeatureRow: View {
         } label: {
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
-                    Text(feature.title)
+                    Text(LocalizedStringKey(feature.title))
                         .font(.system(size: 13, weight: .medium))
                         .foregroundStyle(.primary)
                     Spacer()
@@ -496,7 +501,7 @@ private struct AppleFeatureRow: View {
                             .foregroundStyle(.secondary)
                     }
                 }
-                Text(feature.summary)
+                Text(LocalizedStringKey(feature.summary))
                     .font(.system(size: 12))
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)

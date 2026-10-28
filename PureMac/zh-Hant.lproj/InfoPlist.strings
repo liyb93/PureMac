@@ -1,0 +1,8 @@
+/* macOS permission prompts */
+"NSAppleEventsUsageDescription" = "PureMac 使用 Apple Events 與 Finder 互動，以顯示檔案。";
+"NSDesktopFolderUsageDescription" = "PureMac 需要存取桌面，以尋找可清理的檔案和應用程式殘留。";
+"NSDocumentsFolderUsageDescription" = "PureMac 需要存取文件，以尋找可清理的檔案和應用程式殘留。";
+"NSDownloadsFolderUsageDescription" = "PureMac 需要存取下載項目，以尋找可清理的檔案和應用程式殘留。";
+"NSRemovableVolumesUsageDescription" = "PureMac 需要存取可移除的磁碟，以掃描可清理的檔案。";
+"NSSystemAdministrationUsageDescription" = "PureMac 需要系統管理權限，以清理快取並完整解除安裝應用程式。";
+"NSHumanReadableCopyright" = "版權所有 © 2026，採用 MIT 授權。";

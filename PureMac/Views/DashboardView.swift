@@ -440,7 +440,7 @@ struct DashboardView: View {
                     )
 
                     VStack(alignment: .leading, spacing: 5) {
-                        Text(appState.scanWasCancelled ? "Scan stopped" : "Scan complete")
+                        Text(LocalizedStringKey(appState.scanWasCancelled ? "Scan stopped" : "Scan complete"))
                             .font(.system(size: 18, weight: .semibold))
                             .tracking(-0.3)
                         Text(resultSummary)
@@ -509,13 +509,13 @@ struct DashboardView: View {
                     .font(.system(size: 28))
                     .foregroundStyle(.secondary)
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(appState.scanWasCancelled ? "No results yet" : "Nothing to clean")
+                    Text(LocalizedStringKey(appState.scanWasCancelled ? "No results yet" : "Nothing to clean"))
                         .font(.system(size: 18, weight: .semibold))
-                    Text(
+                    Text(LocalizedStringKey(
                         appState.scanWasCancelled
                             ? "Run the scan again when you are ready to check every area."
                             : "PureMac did not find removable items in the selected scan areas."
-                    )
+                    ))
                     .font(.system(size: 12.5))
                     .foregroundStyle(.secondary)
                 }
@@ -572,7 +572,7 @@ struct DashboardView: View {
                     .font(.system(size: 28))
                     .foregroundStyle(appState.lastCleanupHadFailures ? Tint.orange : Tint.accent)
                 VStack(alignment: .leading, spacing: 9) {
-                    Text(appState.lastCleanupHadFailures ? "Some items need attention" : "Cleanup complete")
+                    Text(LocalizedStringKey(appState.lastCleanupHadFailures ? "Some items need attention" : "Cleanup complete"))
                         .font(.system(size: 20, weight: .semibold))
                     if appState.totalFreedSpace > 0 {
                         Text("\(ByteCountFormatter.string(fromByteCount: appState.totalFreedSpace, countStyle: .file)) removed")

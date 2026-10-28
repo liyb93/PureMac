@@ -1,0 +1,8 @@
+/* macOS permission prompts */
+"NSAppleEventsUsageDescription" = "PureMac はファイルを表示する際に、Apple Events を使って Finder と連携します。";
+"NSDesktopFolderUsageDescription" = "PureMac は不要なファイルや残存ファイルを探すため、デスクトップへのアクセスが必要です。";
+"NSDocumentsFolderUsageDescription" = "PureMac は不要なファイルや残存ファイルを探すため、書類フォルダへのアクセスが必要です。";
+"NSDownloadsFolderUsageDescription" = "PureMac は不要なファイルや残存ファイルを探すため、ダウンロードフォルダへのアクセスが必要です。";
+"NSRemovableVolumesUsageDescription" = "PureMac は不要なファイルをスキャンするため、リムーバブルボリュームへのアクセスが必要です。";
+"NSSystemAdministrationUsageDescription" = "PureMac はキャッシュの消去とアプリの完全なアンインストールのため、システム管理者アクセスが必要です。";
+"NSHumanReadableCopyright" = "Copyright 2026. MIT ライセンス。";

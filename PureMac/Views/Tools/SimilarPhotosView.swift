@@ -342,7 +342,7 @@ struct SimilarPhotosView: View {
                     Text("\(result.groups.count)")
                         .font(.system(size: 21, weight: .semibold))
                         .monospacedDigit()
-                    Text(result.groups.count == 1 ? "similar group" : "similar groups")
+                    Text(LocalizedStringKey(result.groups.count == 1 ? "similar group" : "similar groups"))
                         .font(.system(size: 12.5))
                         .foregroundStyle(.secondary)
                 }

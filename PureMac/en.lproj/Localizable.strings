@@ -927,3 +927,86 @@
 
 "View releases" = "View releases";
 "You're using the latest available version of PureMac." = "You're using the latest available version of PureMac.";
+
+/* Additional interface strings */
+"Applications & system" = "Applications & system";
+"Review cleanup" = "Review cleanup";
+"available" = "available";
+"Purgeable space is managed by macOS and is not included in cleanup." = "Purgeable space is managed by macOS and is not included in cleanup.";
+"Keep PureMac open until cleanup finishes." = "Keep PureMac open until cleanup finishes.";
+"Cleanup permanently removes files unless marked Move to Trash." = "Cleanup permanently removes files unless marked Move to Trash.";
+"Files and cleanup actions marked Permanent cannot be undone. Items marked Move to Trash can be recovered until the Trash is emptied." = "Files and cleanup actions marked Permanent cannot be undone. Items marked Move to Trash can be recovered until the Trash is emptied.";
+"Compare local photos by appearance and review likely matches side by side. Photos are never uploaded or deleted." = "Compare local photos by appearance and review likely matches side by side. Photos are never uploaded or deleted.";
+"Up to 500 photos and 10,000 directory entries per scan. Symbolic links, packages, hidden files, and cloud-only items are skipped." = "Up to 500 photos and 10,000 directory entries per scan. Symbolic links, packages, hidden files, and cloud-only items are skipped.";
+"Choose a folder. PureMac compares file sizes and SHA-256 content hashes. Nothing is selected or removed automatically." = "Choose a folder. PureMac compares file sizes and SHA-256 content hashes. Nothing is selected or removed automatically.";
+"Apple Features" = "Apple Features";
+"Review optional features and the storage used by Apple downloads." = "Review optional features and the storage used by Apple downloads.";
+"Apple Features section" = "Apple Features section";
+"Finishing backup removal. New scans are available when it stops." = "Finishing backup removal. New scans are available when it stops.";
+"Couldn't complete the action" = "Couldn't complete the action";
+"Changes are made in Apple's settings. PureMac does not detect or verify whether a feature is enabled." = "Changes are made in Apple's settings. PureMac does not detect or verify whether a feature is enabled.";
+"No features match your search." = "No features match your search.";
+"Availability also depends on your Mac model, language, region, account, and device management. Apple Intelligence requires a supported Mac with Apple silicon. Setting names can vary between macOS versions." = "Availability also depends on your Mac model, language, region, account, and device management. Apple Intelligence requires a supported Mac with Apple silicon. Setting names can vary between macOS versions.";
+"Apple downloads" = "Apple downloads";
+"Measure known locations without deleting files. These sizes are not a recoverable-space estimate." = "Measure known locations without deleting files. These sizes are not a recoverable-space estimate.";
+"Measuring Apple storage…" = "Measuring Apple storage…";
+"Storage settings" = "Storage settings";
+"Wallpaper settings" = "Wallpaper settings";
+"iPhone and iPad backups" = "iPhone and iPad backups";
+"Review complete local backups individually. Selected backups move to the Trash after confirmation." = "Review complete local backups individually. Selected backups move to the Trash after confirmation.";
+"Backup removal is available after the current scan or cleanup finishes." = "Backup removal is available after the current scan or cleanup finishes.";
+"Review selected backups" = "Review selected backups";
+"Apple guide" = "Apple guide";
+"This location could not be measured. Permissions or protected system storage may prevent access." = "This location could not be measured. Permissions or protected system storage may prevent access.";
+"Dismiss report" = "Dismiss report";
+"Moving backups to the Trash does not free disk space. Emptying the Trash is a separate action." = "Moving backups to the Trash does not free disk space. Emptying the Trash is a separate action.";
+"Removing your only backup prevents you from restoring that device from this Mac. Disconnect devices and stop any active backups before continuing." = "Removing your only backup prevents you from restoring that device from this Mac. Disconnect devices and stop any active backups before continuing.";
+"PureMac rechecks each selected backup before moving it. Emptying the Trash is a separate action." = "PureMac rechecks each selected backup before moving it. Emptying the Trash is a separate action.";
+"Wait for the current scan or cleanup to finish before moving backups." = "Wait for the current scan or cleanup to finish before moving backups.";
+
+/* Apple feature descriptions */
+"Siri" = "Siri";
+"Apple Intelligence" = "Apple Intelligence";
+"Image Playground & Genmoji" = "Image Playground & Genmoji";
+"Writing Assistance" = "Writing Assistance";
+"Writing Tools" = "Writing Tools";
+"Notification summaries" = "Notification summaries";
+"Mail summaries" = "Mail summaries";
+"Inline text predictions" = "Inline text predictions";
+"Analytics & Siri recordings" = "Analytics & Siri recordings";
+"Personalized Apple ads" = "Personalized Apple ads";
+"ChatGPT & intelligence extensions" = "ChatGPT & intelligence extensions";
+"Turn off the assistant and its activation controls." = "Turn off the assistant and its activation controls.";
+"Review Apple's writing, image and summary features." = "Review Apple's writing, image and summary features.";
+"Restrict image generation using Screen Time." = "Restrict image generation using Screen Time.";
+"Restrict Apple's generated writing features." = "Restrict Apple's generated writing features.";
+"Read original notification text without generated summaries." = "Read original notification text without generated summaries.";
+"Turn off generated previews in Apple Mail." = "Turn off generated previews in Apple Mail.";
+"Stop suggested completions appearing as you type." = "Stop suggested completions appearing as you type.";
+"Review diagnostic and voice-recording sharing with Apple." = "Review diagnostic and voice-recording sharing with Apple.";
+"Turn off interest-based ad targeting by Apple." = "Turn off interest-based ad targeting by Apple.";
+"Control access to external AI providers." = "Control access to external AI providers.";
+"Open Siri and choose Turn Off Siri. Confirm the change. Screen Time also offers Don't Allow Siri." = "Open Siri and choose Turn Off Siri. Confirm the change. Screen Time also offers Don't Allow Siri.";
+"Open Siri or Apple Intelligence & Siri and turn off Ask Siri. On versions that show a Siri section, open it to find the control." = "Open Siri or Apple Intelligence & Siri and turn off Ask Siri. On versions that show a Siri section, open it to find the control.";
+"macOS 27 uses separate Siri, Screen Time and app controls. Review the individual features below. Turning off Siri does not establish that all Apple Intelligence features are off." = "macOS 27 uses separate Siri, Screen Time and app controls. Review the individual features below. Turning off Siri does not establish that all Apple Intelligence features are off.";
+"Open Apple Intelligence & Siri, turn off Apple Intelligence and confirm. macOS manages downloaded models; PureMac does not promise that this immediately recovers their storage." = "Open Apple Intelligence & Siri, turn off Apple Intelligence and confirm. macOS manages downloaded models; PureMac does not promise that this immediately recovers their storage.";
+"Open Notifications > Summarize Notifications and turn it off, or choose which apps can use summaries." = "Open Notifications > Summarize Notifications and turn it off, or choose which apps can use summaries.";
+"In Mail, choose Mail > Settings > Viewing, then turn off Summarize Message Previews. The button opens Mail; finish the change in its settings." = "In Mail, choose Mail > Settings > Viewing, then turn off Summarize Message Previews. The button opens Mail; finish the change in its settings.";
+"Open Keyboard > Text Input > Edit and turn off Show inline predictive text. This setting is separate from Apple Intelligence." = "Open Keyboard > Text Input > Edit and turn off Show inline predictive text. This setting is separate from Apple Intelligence.";
+"Open Privacy & Security > Analytics & Improvements. Review Share Mac Analytics, Improve Siri & Dictation and Share iCloud Analytics. Available switches depend on your Mac and account." = "Open Privacy & Security > Analytics & Improvements. Review Share Mac Analytics, Improve Siri & Dictation and Share iCloud Analytics. Available switches depend on your Mac and account.";
+"Open Privacy & Security > Apple Advertising and turn off Personalized Ads. This changes ad targeting; it does not remove advertising or reduce the number of ads." = "Open Privacy & Security > Apple Advertising and turn off Personalized Ads. This changes ad targeting; it does not remove advertising or reduce the number of ads.";
+"Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Image Creation to Blocked where available. This restricts access; it does not uninstall the protected app or erase images you created." = "Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Image Creation to Blocked where available. This restricts access; it does not uninstall the protected app or erase images you created.";
+"Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Writing Assistance to Blocked where available." = "Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Writing Assistance to Blocked where available.";
+"Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Extensions to Blocked. This does not uninstall standalone provider apps." = "Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Extensions to Blocked. This does not uninstall standalone provider apps.";
+"Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Image Creation. This restricts access; it does not uninstall the protected app or erase images you created." = "Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Image Creation. This restricts access; it does not uninstall the protected app or erase images you created.";
+"Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Writing Tools." = "Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Writing Tools.";
+"Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Intelligence Extensions. You can also open Apple Intelligence & Siri > ChatGPT to review its controls." = "Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Intelligence Extensions. You can also open Apple Intelligence & Siri > ChatGPT to review its controls.";
+
+/* Apple features and backups */
+"Open Mail" = "Open Mail";
+"Open Settings" = "Open Settings";
+"Requires macOS %lld.%lld" = "Requires macOS %lld.%lld";
+"Checking and moving selected backups to the Trash…" = "Checking and moving selected backups to the Trash…";
+"Checking local backups…" = "Checking local backups…";
+"No complete local device backups were found." = "No complete local device backups were found.";
+"No backups are available to select. Review the scan issues above." = "No backups are available to select. Review the scan issues above.";

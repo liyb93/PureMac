@@ -190,7 +190,7 @@ struct DuplicateFinderView: View {
                         .foregroundStyle(Tint.accent)
                 }
                 VStack(spacing: 7) {
-                    Text(progress.phase == .discovering ? "Looking through files" : "Verifying possible matches")
+                    Text(LocalizedStringKey(progress.phase == .discovering ? "Looking through files" : "Verifying possible matches"))
                         .font(.system(size: 18, weight: .semibold))
                     Text(progressSummary)
                         .font(.callout.monospacedDigit())
@@ -466,11 +466,23 @@ struct DuplicateFinderView: View {
         CardSurface(padding: 14, elevation: .raised, tint: selectedIDs.isEmpty ? nil : Tint.accent) {
             HStack(spacing: 12) {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(selectedIDs.isEmpty ? "Nothing selected" : "\(selectedIDs.count) selected")
-                        .font(.system(size: 14, weight: .semibold).monospacedDigit())
-                    Text(selectedIDs.isEmpty ? "Select the extra copies you want to review" : "\(format(selectedSize)) will move to Trash")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                    Group {
+                        if selectedIDs.isEmpty {
+                            Text("Nothing selected")
+                        } else {
+                            Text("\(selectedIDs.count) selected")
+                        }
+                    }
+                    .font(.system(size: 14, weight: .semibold).monospacedDigit())
+                    Group {
+                        if selectedIDs.isEmpty {
+                            Text("Select the extra copies you want to review")
+                        } else {
+                            Text("\(format(selectedSize)) will move to Trash")
+                        }
+                    }
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
                 }
                 Spacer()
                 if !selectedIDs.isEmpty {
