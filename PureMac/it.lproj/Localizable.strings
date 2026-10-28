@@ -1012,3 +1012,9 @@
 "macOS 27 uses separate Siri, Screen Time and app controls. Review the individual features below. Turning off Siri does not establish that all Apple Intelligence features are off." = "macOS 27 usa controlli separati per Siri, Tempo di utilizzo e le app. Controlla le singole funzioni qui sotto. Disattivare Siri non garantisce che tutte le funzioni di Apple Intelligence siano disattivate.";
 "Open Screen Time > Content & Privacy Restrictions. Enable All Restrictions, then open Siri. These restrictions may apply across devices using your Apple Account. Set Image Creation to Blocked where available. This restricts access; it does not uninstall the protected app or erase images you created." = "Apri Tempo di utilizzo > Restrizioni contenuti e privacy. Attiva Tutte le restrizioni, quindi apri Siri. Le restrizioni possono applicarsi ai dispositivi che usano il tuo account Apple. Dove disponibile, imposta Creazione immagini su Bloccata. Questo limita l’accesso, ma non disinstalla l’app protetta né elimina le immagini create.";
 "Turn off generated previews in Apple Mail." = "Disattiva le anteprime generate in Apple Mail.";
+
+/* Docker cleanup errors */
+"Docker CLI not found — install Docker Desktop or OrbStack" = "Docker CLI non trovato: installa Docker Desktop o OrbStack";
+"Couldn't run docker system prune: %@" = "Impossibile eseguire docker system prune: %@";
+"Docker isn't running — start Docker Desktop or OrbStack, then clean again" = "Docker non è in esecuzione: avvia Docker Desktop o OrbStack, quindi ripeti la pulizia";
+"docker system prune failed (exit %d)" = "docker system prune non riuscito (codice di uscita %d)";

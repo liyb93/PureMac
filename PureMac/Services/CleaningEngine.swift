@@ -425,7 +425,7 @@ actor CleaningEngine {
     func pruneDockerSystem() async -> (freed: Int64, error: String?) {
         let dockerBinPaths = ["/usr/local/bin/docker", "/opt/homebrew/bin/docker"]
         guard let dockerBin = dockerBinPaths.first(where: { fileManager.isExecutableFile(atPath: $0) }) else {
-            return (0, "Docker CLI not found — install Docker Desktop or OrbStack")
+            return (0, String(localized: "Docker CLI not found — install Docker Desktop or OrbStack"))
         }
 
         let task = Process()
@@ -439,7 +439,7 @@ actor CleaningEngine {
             try task.run()
         } catch {
             Logger.shared.log("docker system prune failed to launch: \(error.localizedDescription)", level: .error)
-            return (0, "Couldn't run docker system prune: \(error.localizedDescription)")
+            return (0, String(localized: "Couldn't run docker system prune: \(error.localizedDescription)"))
         }
         // Drain both pipes BEFORE waiting: prune lists every deleted object
         // and can overflow the 64 KB pipe buffer, deadlocking waitUntilExit.
@@ -451,10 +451,10 @@ actor CleaningEngine {
             let stderrText = String(data: errData, encoding: .utf8) ?? ""
             if stderrText.contains("Cannot connect") || stderrText.contains("dial unix")
                 || stderrText.contains("daemon") {
-                return (0, "Docker isn't running — start Docker Desktop or OrbStack, then clean again")
+                return (0, String(localized: "Docker isn't running — start Docker Desktop or OrbStack, then clean again"))
             }
             Logger.shared.log("docker system prune exited \(task.terminationStatus): \(stderrText)", level: .error)
-            return (0, "docker system prune failed (exit \(task.terminationStatus))")
+            return (0, String(localized: "docker system prune failed (exit \(task.terminationStatus))"))
         }
 
         // Final line reads "Total reclaimed space: 1.234GB" ("0B" when idle).

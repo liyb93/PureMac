@@ -1008,3 +1008,9 @@
 "Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Image Creation. This restricts access; it does not uninstall the protected app or erase images you created." = "打開“屏幕使用時間 > 內容與隱私”，啓用內容與隱私限制，然後打開“智能與 Siri”。關閉“圖像創作”。這會限制存取，不會卸載受保護的應用或抹掉你創建的圖像。";
 "Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Writing Tools." = "打開“屏幕使用時間 > 內容與隱私”，啓用內容與隱私限制，然後打開“智能與 Siri”。關閉“書寫工具”。";
 "Open Screen Time > Content & Privacy. Enable Content & Privacy restrictions, then open Intelligence & Siri. Turn off Intelligence Extensions. You can also open Apple Intelligence & Siri > ChatGPT to review its controls." = "打開“屏幕使用時間 > 內容與隱私”，啓用內容與隱私限制，然後打開“智能與 Siri”。關閉“智能擴展”。你也可以打開“Apple 智能與 Siri > ChatGPT”檢查相關控制。";
+
+/* Docker cleanup errors */
+"Docker CLI not found — install Docker Desktop or OrbStack" = "找不到 Docker CLI，請安裝 Docker Desktop 或 OrbStack";
+"Couldn't run docker system prune: %@" = "無法執行 docker system prune：%@";
+"Docker isn't running — start Docker Desktop or OrbStack, then clean again" = "Docker 未執行，請啟動 Docker Desktop 或 OrbStack 後重新清理";
+"docker system prune failed (exit %d)" = "docker system prune 失敗（結束代碼 %d）";

@@ -1010,3 +1010,9 @@
 "Checking local backups…" = "Checking local backups…";
 "No complete local device backups were found." = "No complete local device backups were found.";
 "No backups are available to select. Review the scan issues above." = "No backups are available to select. Review the scan issues above.";
+
+/* Docker cleanup errors */
+"Docker CLI not found — install Docker Desktop or OrbStack" = "Docker CLI not found — install Docker Desktop or OrbStack";
+"Couldn't run docker system prune: %@" = "Couldn't run docker system prune: %@";
+"Docker isn't running — start Docker Desktop or OrbStack, then clean again" = "Docker isn't running — start Docker Desktop or OrbStack, then clean again";
+"docker system prune failed (exit %d)" = "docker system prune failed (exit %d)";

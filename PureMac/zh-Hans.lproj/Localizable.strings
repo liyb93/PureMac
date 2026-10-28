@@ -1009,3 +1009,9 @@
 "Checking local backups…" = "正在检查本地备份…";
 "No complete local device backups were found." = "未找到完整的本地设备备份。";
 "No backups are available to select. Review the scan issues above." = "没有可选择的备份。请检查上方的扫描问题。";
+
+/* Docker cleanup errors */
+"Docker CLI not found — install Docker Desktop or OrbStack" = "未找到 Docker CLI，请安装 Docker Desktop 或 OrbStack";
+"Couldn't run docker system prune: %@" = "无法运行 docker system prune：%@";
+"Docker isn't running — start Docker Desktop or OrbStack, then clean again" = "Docker 未运行，请启动 Docker Desktop 或 OrbStack 后重新清理";
+"docker system prune failed (exit %d)" = "docker system prune 失败（退出码 %d）";
